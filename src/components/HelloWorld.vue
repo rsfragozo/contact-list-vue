@@ -1,17 +1,17 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ContactList />
+    <Contact />
   </div>
 </template>
 
 <script>
-import ContactList from "./contact/ContactList";
+import Contact from "./contact/Contact";
 
 export default {
   name: 'HelloWorld',
   components: {
-    ContactList
+    Contact
   },
   props: {
     msg: String

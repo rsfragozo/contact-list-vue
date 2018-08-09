@@ -1,5 +1,5 @@
 <template>
-    <div id="contact-list">
+    <div id="contact">
       <ul>
         <li v-for="(contact, id) in ContactStore.contacts" v-bind:key="id">
           <div v-if="editedId === contact.id">
@@ -27,7 +27,7 @@
 <script>
 import ContactStore from "../../store/ContactStore"
 export default {
-  name: 'ContactList',
+  name: 'Contact',
   data() {
     return {
       "newContact" : {},
